@@ -10,10 +10,82 @@ body {
 header {
   background-color: #120639;
   padding: 2rem;
+  display: flex;
+  position: relative;
 }
 
 header a {
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+
+.product {
+  border: 1px #404040 solid;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+}
+
+.product img {
+  width: 370px;
+}
+
+.welcomeBsnner {
+  margin: 5%;
+  width: 90%;
+  max-height: 500px;
+  display: flex;
+  position: relative;
+  justify-content:stretch;
+  background-color: #eeeeee;
+  border: #eeeeee 1px solid;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.default-btn-gold {
+  border: #d68227 1px solid;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  color: #d68227;
+  justify-self: center;
+}
+
+.default-btn-blue {
+  border: #120639 1px solid;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  color: #120639;
+  justify-self: center;
+  margin: 0 1rem;
+}
+
+.welcome-content {
+  justify-content: center;
+  padding: 8rem 2rem;
+}
+
+.link-gold {
+  text-decoration: none;
+  color: #d68227;
+
+}
+
+.product-details {
+  padding: 1rem;
+}
+
+main {
+  justify-content: center;
+  text-align: center;
 }

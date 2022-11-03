@@ -5,7 +5,9 @@ import {Link} from 'react-router-dom';
 function MainNavigation () {
     return (
         <header className={classes.header}>
-            <div className={classes.logo}> PALA</div>
+            <div className={classes.logo}> 
+                <img src="/images/pala-logo.png" alt="pala-logo.png"/>
+            </div>
             <nav>
                 <ul>
                     <li>
