@@ -1,11 +1,14 @@
 import React from "react";
 import classes from './MainNavigation.module.css';
 import {Link} from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import {LinkContainer} from 'react-router-bootstrap';
 
 function MainNavigation () {
     return (
-        <header className={classes.header}>
-            <div className={classes.logo}>
+        <header>
+            {/* <div className={classes.logo}>
                 <Link to='/'>
                     <img src="/images/pala-logo.png" alt="pala-logo.png"/>
                 </Link> 
@@ -25,7 +28,17 @@ function MainNavigation () {
                         <Link to='/Contact'>Contact</Link>
                     </li>
                 </ul>
-            </nav>
+            </nav> */}
+            <Navbar>
+                <Container>
+                    <LinkContainer to={'/'}>
+                        <Navbar.Brand>
+                            <img src="/images/pala-logo.png" alt="pala-logo.png" className={classes.brand}/>
+                        </Navbar.Brand>
+                    </LinkContainer>
+                </Container>
+
+            </Navbar>
         </header>
     )
 }
