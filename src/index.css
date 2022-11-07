@@ -44,6 +44,7 @@ header a {
   display: flex;
   position: relative;
   justify-content:stretch;
+  flex-wrap:inherit;
   background-color: #eeeeee;
   border: #eeeeee 1px solid;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
