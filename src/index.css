@@ -29,20 +29,9 @@ header a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 3%;
-}
 
-.product {
-  border: 1px #404040 solid;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
-  margin: 1rem;
-}
-
-.product img {
-  width: 370px;
+.img-prod {
+  max-width:280px;
 }
 
 .welcomeBsnner {

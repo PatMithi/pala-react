@@ -1,6 +1,9 @@
 import React, { useEffect, useReducer, useState } from "react";
 import axios from 'axios';
 import logger from 'use-reducer-logger';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Product from "../components/Product";
 
 const reducer = (state, action) => {
     switch(action.type) {
@@ -48,17 +51,13 @@ function Products () {
                 )   :
                     error? (<div>{error}</div>
                 )   : (
-                    products.map(product => (
-                    <div key={product.image} className="product">
-                        <img src={product.image} alt={product.name}/>
-                        <div className="product-details">
-                            <p>{product.name}</p>
-                            <p>{product.price}</p>
-                            <button className="default-btn-gold">Add to Cart</button>
-                            <button className="default-btn-blue">Enquire</button>
-                        </div>
-                    </div>
-                    ))
+                    <Row>
+                        {products.map(product => (
+                            <Col key={product.slug} sm={6} md={4} lg={3} className="mb-3">
+                                <Product product={product}></Product>
+                            </Col>
+                    ))}
+                    </Row>
                 )
                 }
                 </div>

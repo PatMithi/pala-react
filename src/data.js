@@ -2,6 +2,7 @@ const data = {
     products: [
         {
             name: 'BLock 25mm',
+            slug: 'block-25',
             desc: '25 mm concrete blocks',
             image: '/images/0.jpeg',
             price: 500,
@@ -10,6 +11,7 @@ const data = {
         },
         {
             name: 'BLock 75mm',
+            slug: 'block-75',
             desc: '75 mm concrete blocks',
             image: '/images/1.jpeg',
             price: 950,
@@ -18,6 +20,7 @@ const data = {
         },
         {
             name: 'BLock 50mm',
+            slug: 'block-50',
             desc: '50 mm concrete blocks',
             image: '/images/0.jpeg',
             price: 800,
@@ -25,7 +28,8 @@ const data = {
             rating: 4.5
         }, 
         {
-            name: 'BLock 50mm',
+            name: 'BLock 100mm',
+            slug: 'block-100',
             desc: '50 mm concrete blocks',
             image: '/images/5.jpeg',
             price: 800,
